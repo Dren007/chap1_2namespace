@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		223F9E161F5BA3A3001B288C /* func.c in Sources */ = {isa = PBXBuildFile; fileRef = 223F9E141F5BA3A3001B288C /* func.c */; };
+		2267EA781F5E34C7008B9C50 /* car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2267EA771F5E34C7008B9C50 /* car.cpp */; };
 		22CFD71F1F5964D200C9A348 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CFD71E1F5964D200C9A348 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		223F9E141F5BA3A3001B288C /* func.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = func.c; sourceTree = "<group>"; };
 		223F9E151F5BA3A3001B288C /* func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = func.h; sourceTree = "<group>"; };
+		2267EA711F5E3474008B9C50 /* car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = car.h; sourceTree = "<group>"; };
+		2267EA771F5E34C7008B9C50 /* car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = car.cpp; sourceTree = "<group>"; };
 		22CFD71B1F5964D200C9A348 /* chap1_2namespace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chap1_2namespace; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CFD71E1F5964D200C9A348 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +66,8 @@
 				22CFD71E1F5964D200C9A348 /* main.cpp */,
 				223F9E141F5BA3A3001B288C /* func.c */,
 				223F9E151F5BA3A3001B288C /* func.h */,
+				2267EA711F5E3474008B9C50 /* car.h */,
+				2267EA771F5E34C7008B9C50 /* car.cpp */,
 			);
 			path = chap1_2namespace;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2267EA781F5E34C7008B9C50 /* car.cpp in Sources */,
 				22CFD71F1F5964D200C9A348 /* main.cpp in Sources */,
 				223F9E161F5BA3A3001B288C /* func.c in Sources */,
 			);

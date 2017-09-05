@@ -55,7 +55,7 @@ T abs(T x){
 
 
 //8、类和对象
-class Car{
+/*class Car{
 public:
     void run(){
         cout<<"Car run"<<endl;
@@ -72,6 +72,18 @@ private:
     int m_price;
     int m_carNum;
 };
+*/
+//8.类和对象2
+#include "car.h"
+void fooCar(Car *pcar){//指针
+    pcar->print();
+    pcar->stop();
+}
+
+void barCar(Car& rcar){//引用
+    rcar.print();
+    rcar.stop();
+}
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -153,6 +165,18 @@ int main(int argc, const char * argv[]) {
     ca.setProperty(10000, 101021);
     ca.run();
     ca.stop();
+    
+    cout <<"/////////////////////////\n//类、对象-2 this指针\n/////////////////////////\n"<<endl;
+    cout<<"the address of ca is:"<<&ca<<endl;
+    ca.print();
+    
+    cout <<"/////////////////////////\n//类、对象-2 指针函数\n/////////////////////////\n"<<endl;
+    fooCar(&ca);
+    
+    cout <<"/////////////////////////\n//类、对象-2 引用函数\n/////////////////////////\n"<<endl;
+    barCar(ca);
+    
+    
     
     return 0;
 }
