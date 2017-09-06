@@ -10,6 +10,8 @@
 #define car_h
 class Car{
 public:
+    Car();
+    Car(int price,int carNum);
     void run();
     void stop();
     void setProperty(int price,int carNum);

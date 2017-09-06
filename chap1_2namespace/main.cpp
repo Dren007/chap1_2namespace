@@ -75,6 +75,11 @@ private:
 */
 //8.类和对象2
 #include "car.h"
+
+
+//7、函数模板
+#include "student.h"
+
 void fooCar(Car *pcar){//指针
     pcar->print();
     pcar->stop();
@@ -83,6 +88,13 @@ void fooCar(Car *pcar){//指针
 void barCar(Car& rcar){//引用
     rcar.print();
     rcar.stop();
+}
+
+//12、构造和析构函数
+#include "student.h"
+void funS(Student stu){
+
+
 }
 
 int main(int argc, const char * argv[]) {
@@ -160,9 +172,9 @@ int main(int argc, const char * argv[]) {
     cout<<abs(m)<<endl;
     
     cout <<"/////////////////////////\n//类、对象-2\n/////////////////////////\n"<<endl;
-    Car ca;
+    Car ca(1000,89838);
     cout<<sizeof(ca)<<endl;
-    ca.setProperty(10000, 101021);
+    /*ca.setProperty(10000, 101021);
     ca.run();
     ca.stop();
     
@@ -175,8 +187,16 @@ int main(int argc, const char * argv[]) {
     
     cout <<"/////////////////////////\n//类、对象-2 引用函数\n/////////////////////////\n"<<endl;
     barCar(ca);
+    */
+    cout <<"/////////////////////////\n//构造函数\n/////////////////////////\n"<<endl;
+    ca.print();
     
     
+    Student stu(1000);
+    funS(stu);
+    //funS(10002);
+    
+    cout <<"/////////////////////////\n//析构函数\n/////////////////////////\n"<<endl;
     
     return 0;
 }

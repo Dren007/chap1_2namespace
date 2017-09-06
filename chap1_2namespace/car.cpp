@@ -9,7 +9,13 @@
 using namespace::std;
 
 #include "car.h"
+Car::Car(){
 
+}
+
+Car::Car(int price,int carNum){
+    setProperty(price, carNum);
+}
 void Car::run(){
     cout<<"Car run"<<endl;
 }
@@ -26,5 +32,7 @@ void Car::setProperty(int price, int carNum){
 }
 
 void Car::print(){
-    cout<<" in "<<__func__<<" this="<<this<<endl;
+    //cout<<" in "<<__func__<<" this="<<this<<endl;
+    cout<<"this car price is: "<<m_price<<endl;
+    cout<<"this car carNnum is: "<<m_carNum<<endl;
 }
