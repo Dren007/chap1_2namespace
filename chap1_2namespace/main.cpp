@@ -97,6 +97,35 @@ void funS(Student stu){
 
 }
 
+//13、标准库类型string
+#include <string>
+
+
+//14、static类成员
+#include "martain.h"
+void funM(){
+    Martain mc;
+    int count=Martain::getCount();
+    cout<<"count = "<<count<<endl;
+    
+}
+
+
+//14、动态内存分配
+class Test{
+public:
+    Test()
+    :m_val(0)
+    {
+        cout<<"Test"<<endl;
+    }
+    ~Test(){
+        cout<<"~Test"<<endl;
+    }
+private:
+    int m_val;
+};
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     using two::X;
@@ -191,12 +220,59 @@ int main(int argc, const char * argv[]) {
     cout <<"/////////////////////////\n//构造函数\n/////////////////////////\n"<<endl;
     ca.print();
     
-    
+     cout <<"/////////////////////////\n//析构函数\n/////////////////////////\n"<<endl;
     Student stu(1000);
     funS(stu);
     //funS(10002);
     
-    cout <<"/////////////////////////\n//析构函数\n/////////////////////////\n"<<endl;
+    
+    
+    cout <<"/////////////////////////\n//标准库类型string\n/////////////////////////\n"<<endl;
+    string sta("C++");
+    string stb(sta);
+    string stc(4,'r');
+    cout<<"a="<<sta<<" b="<<stb<<" c="<<stc<<endl;
+    string std;
+    std=sta;
+    if (std.empty()) {
+        cout<<"string std is empty! "<<endl;
+    }else
+        cout<<"sting std's size is:"<<std.size()<<endl;
+    
+    
+    cout <<"/////////////////////////\n//static类成员\n/////////////////////////\n"<<endl;
+    int count=Martain::getCount();
+    cout<<"count = "<<count<<endl;
+    
+    Martain ma;
+    count=Martain::getCount();
+    cout<<"count = "<<count<<endl;
+    
+    Martain mb;
+    count=Martain::getCount();
+    cout<<"count = "<<count<<endl;
+    
+    funM();
+    
+    cout <<"/////////////////////////\n//动态内存分配\n/////////////////////////\n"<<endl;
+    {
+    Test t;
+    }
+    cout<<"end of }"<<endl;
+    
+    Test *pVal=new Test();
+    delete pVal;
+    pVal=NULL;
+    
+    int *p=(int *)malloc(sizeof(int));
+    free(p);
+    p=NULL;
+    
+    Test *pArray=new Test[2];
+    delete [] pArray;
+    //delete pArray;
+    pArray=NULL;
+    
     
     return 0;
 }
