@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222552321F623CFC008C7CD7 /* person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222552311F623CFC008C7CD7 /* person.cpp */; };
 		222B15AF1F5FD5EC00558B44 /* martain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222B15AE1F5FD5EC00558B44 /* martain.cpp */; };
 		223F9E161F5BA3A3001B288C /* func.c in Sources */ = {isa = PBXBuildFile; fileRef = 223F9E141F5BA3A3001B288C /* func.c */; };
 		2267EA781F5E34C7008B9C50 /* car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2267EA771F5E34C7008B9C50 /* car.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		222552301F623CEB008C7CD7 /* person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
+		222552311F623CFC008C7CD7 /* person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = person.cpp; sourceTree = "<group>"; };
 		222B15AD1F5FD5DB00558B44 /* martain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = martain.h; sourceTree = "<group>"; };
 		222B15AE1F5FD5EC00558B44 /* martain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = martain.cpp; sourceTree = "<group>"; };
 		223F9E141F5BA3A3001B288C /* func.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = func.c; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				22CFD71E1F5964D200C9A348 /* main.cpp */,
+				222552301F623CEB008C7CD7 /* person.h */,
+				222552311F623CFC008C7CD7 /* person.cpp */,
 				222B15AD1F5FD5DB00558B44 /* martain.h */,
 				222B15AE1F5FD5EC00558B44 /* martain.cpp */,
 				22E75DF61F5E6E69001DACD2 /* student.h */,
@@ -149,6 +154,7 @@
 				223F9E161F5BA3A3001B288C /* func.c in Sources */,
 				2271FA611F612F2E00F7D3E5 /* student1.cpp in Sources */,
 				22E75DF81F5E6E7A001DACD2 /* student.cpp in Sources */,
+				222552321F623CFC008C7CD7 /* person.cpp in Sources */,
 				222B15AF1F5FD5EC00558B44 /* martain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

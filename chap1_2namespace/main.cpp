@@ -140,6 +140,12 @@ Student1 barS1(){
     return tom;
 }
 
+//18、拷贝构造函数--浅、深拷贝
+#include "person.h"
+
+//18、constr 关键字
+
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     using two::X;
@@ -295,6 +301,17 @@ int main(int argc, const char * argv[]) {
     cout<<"Calling fooS1"<<endl;
     fooS1(joe);
     cout<<"After call of fooS1"<<endl;
+    
+    
+    cout <<"/////////////////////////\n//拷贝构造函数--浅、深拷贝\n/////////////////////////\n"<<endl;
+    
+    Person pe("peter");
+    Person pe3("Tom");
+    Person pe2=pe;
+    pe.Print();
+    pe2.Print();
+    
+    pe2=pe3;
     
     return 0;
 }
