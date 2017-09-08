@@ -126,6 +126,20 @@ private:
     int m_val;
 };
 
+//15、动态内存分配
+
+
+//17、拷贝构造函数
+#include "student1.h"
+void fooS1(Student1 st1){
+    cout<<"In fun "<<__func__<<endl;
+}
+Student1 barS1(){
+    Student1 tom("Tom",112);
+    
+    return tom;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     using two::X;
@@ -273,6 +287,14 @@ int main(int argc, const char * argv[]) {
     //delete pArray;
     pArray=NULL;
     
+    
+    cout <<"/////////////////////////\n//拷贝构造函数\n/////////////////////////\n"<<endl;
+    cout<<"Enter main---->"<<endl;
+    Student1 joe("joe",87);
+    
+    cout<<"Calling fooS1"<<endl;
+    fooS1(joe);
+    cout<<"After call of fooS1"<<endl;
     
     return 0;
 }

@@ -10,6 +10,7 @@
 		222B15AF1F5FD5EC00558B44 /* martain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222B15AE1F5FD5EC00558B44 /* martain.cpp */; };
 		223F9E161F5BA3A3001B288C /* func.c in Sources */ = {isa = PBXBuildFile; fileRef = 223F9E141F5BA3A3001B288C /* func.c */; };
 		2267EA781F5E34C7008B9C50 /* car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2267EA771F5E34C7008B9C50 /* car.cpp */; };
+		2271FA611F612F2E00F7D3E5 /* student1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2271FA601F612F2E00F7D3E5 /* student1.cpp */; };
 		22CFD71F1F5964D200C9A348 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CFD71E1F5964D200C9A348 /* main.cpp */; };
 		22E75DF81F5E6E7A001DACD2 /* student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E75DF71F5E6E7A001DACD2 /* student.cpp */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,8 @@
 		223F9E151F5BA3A3001B288C /* func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = func.h; sourceTree = "<group>"; };
 		2267EA711F5E3474008B9C50 /* car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = car.h; sourceTree = "<group>"; };
 		2267EA771F5E34C7008B9C50 /* car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = car.cpp; sourceTree = "<group>"; };
+		2271FA5F1F612F1D00F7D3E5 /* student1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = student1.h; sourceTree = "<group>"; };
+		2271FA601F612F2E00F7D3E5 /* student1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = student1.cpp; sourceTree = "<group>"; };
 		22CFD71B1F5964D200C9A348 /* chap1_2namespace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chap1_2namespace; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CFD71E1F5964D200C9A348 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		22E75DF61F5E6E69001DACD2 /* student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = student.h; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 				222B15AE1F5FD5EC00558B44 /* martain.cpp */,
 				22E75DF61F5E6E69001DACD2 /* student.h */,
 				22E75DF71F5E6E7A001DACD2 /* student.cpp */,
+				2271FA5F1F612F1D00F7D3E5 /* student1.h */,
+				2271FA601F612F2E00F7D3E5 /* student1.cpp */,
 				223F9E141F5BA3A3001B288C /* func.c */,
 				223F9E151F5BA3A3001B288C /* func.h */,
 				2267EA711F5E3474008B9C50 /* car.h */,
@@ -142,6 +147,7 @@
 				2267EA781F5E34C7008B9C50 /* car.cpp in Sources */,
 				22CFD71F1F5964D200C9A348 /* main.cpp in Sources */,
 				223F9E161F5BA3A3001B288C /* func.c in Sources */,
+				2271FA611F612F2E00F7D3E5 /* student1.cpp in Sources */,
 				22E75DF81F5E6E7A001DACD2 /* student.cpp in Sources */,
 				222B15AF1F5FD5EC00558B44 /* martain.cpp in Sources */,
 			);
