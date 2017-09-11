@@ -143,7 +143,71 @@ Student1 barS1(){
 //18、拷贝构造函数--浅、深拷贝
 #include "person.h"
 
-//18、constr 关键字
+//19、constr 关键字
+
+//20、友元函数 友元类
+class X;
+
+class Y{
+public:
+    void f(X* );
+    //void b(X);
+private:
+    X* pX;
+};
+
+//void Y::b(X as){
+//
+//}
+
+class X{
+public:
+    void initialize();
+    friend void g(X*,int);
+    friend void Y::f(X *);
+    friend class Z;
+    friend void h();
+    
+private:
+    int i;
+    
+};
+
+void X::initialize(){
+    i=0;
+}
+
+void g(X* x,int i){
+    x->i=i;
+}
+void Y::f(X * x){
+    x->i=47;
+}
+
+class Z{
+public:
+    void initialize();
+    void g(X* x);
+    
+private:
+    int j;
+};
+
+void Z::initialize(){
+    j=99;
+}
+void Z::g(X *x){
+    x->i+=j;
+   
+}
+
+void h(){
+    //X.i=100;
+}
+
+
+//21、单例模式
+#include "singleton.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -312,6 +376,18 @@ int main(int argc, const char * argv[]) {
     pe2.Print();
     
     pe2=pe3;
+    
+    
+    cout <<"/////////////////////////\n//友元函数、友元类?\n/////////////////////////\n"<<endl;
+    class X x;
+    Z z;
+    z.g(&x);
+    
+    
+    cout <<"/////////////////////////\n//单例模式\n/////////////////////////\n"<<endl;
+    
+    Singleton::getInstance()->doSomething();
+    
     
     return 0;
 }
