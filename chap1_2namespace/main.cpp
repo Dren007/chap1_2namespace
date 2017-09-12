@@ -209,6 +209,12 @@ void h(){
 //21、单例模式
 #include "singleton.h"
 
+//22、运算重载
+#include "rmb.h"
+
+
+//25、自增运算重载
+#include "increase.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -387,6 +393,44 @@ int main(int argc, const char * argv[]) {
     cout <<"/////////////////////////\n//单例模式\n/////////////////////////\n"<<endl;
     
     Singleton::getInstance()->doSomething();
+    
+    cout <<"/////////////////////////\n//运算重载\n/////////////////////////\n"<<endl;
+    RMB val1(2,50);
+    RMB val2(2,48);
+    if (val1>val2) {
+        cout<<"val1 is more than val2 "<<endl;
+    }
+    
+    val1=val1+val2;
+    val1.display();
+    
+    cout <<"/////////////////////////\n//前、后增量\n/////////////////////////\n"<<endl;
+    int fx=0;
+    int fy=0;
+    for (int j=0; j<10; j++) {
+        fx=fx++;
+        cout<<" fx="<<fx<<endl;
+        
+        fy=++fy;
+        cout<<" fy="<<fy<<endl;
+    }
+    cout<<"fx="<<fx<<",fy="<<fy<<endl;
+    
+    
+    cout <<"/////////////////////////\n//增量运算重载\n/////////////////////////\n"<<endl;
+    Increase inc(100);
+    Increase inc2=++inc;
+    cout<<inc2.getVal() <<endl;
+    cout<<inc.getVal() <<endl;
+    cout<<endl;
+    
+    Increase inc3=inc++;
+    cout<<inc3.getVal() <<endl;
+    cout<<inc.getVal() <<endl;
+    cout<<endl;
+    
+    
+    cout <<"/////////////////////////\n//String类运算重载\n/////////////////////////\n"<<endl;
     
     
     return 0;
