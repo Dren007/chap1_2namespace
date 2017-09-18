@@ -216,6 +216,10 @@ void h(){
 //25、自增运算重载
 #include "increase.h"
 
+//26、String运算重载
+#include "iotekString.h"
+using namespace::iotek;
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     using two::X;
@@ -432,6 +436,18 @@ int main(int argc, const char * argv[]) {
     
     cout <<"/////////////////////////\n//String类运算重载\n/////////////////////////\n"<<endl;
     
+    String s10("hello");
+    
+    String s02=s10;
+    String s30="wold";
+    
+    s30=s10;
+    s30="world";
+    
+    s10+=s30;
+    
+    cout<<"s10="<<s10.data()<<endl;
+    cout<<"s30="<<s30.data()<<endl;
     
     return 0;
 }
