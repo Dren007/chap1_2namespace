@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		222552321F623CFC008C7CD7 /* person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222552311F623CFC008C7CD7 /* person.cpp */; };
 		222B15AF1F5FD5EC00558B44 /* martain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222B15AE1F5FD5EC00558B44 /* martain.cpp */; };
+		222E9DB91F70ED73007DC9FA /* furniture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222E9DB81F70ED73007DC9FA /* furniture.cpp */; };
 		222FF79C1F666CD7002720D0 /* rmb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222FF79B1F666CD7002720D0 /* rmb.cpp */; };
 		222FF79F1F667AF5002720D0 /* increase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222FF79E1F667AF5002720D0 /* increase.cpp */; };
 		222FF7A21F6687AE002720D0 /* iotekString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222FF7A11F6687AE002720D0 /* iotekString.cpp */; };
@@ -38,6 +39,8 @@
 		222552311F623CFC008C7CD7 /* person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = person.cpp; sourceTree = "<group>"; };
 		222B15AD1F5FD5DB00558B44 /* martain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = martain.h; sourceTree = "<group>"; };
 		222B15AE1F5FD5EC00558B44 /* martain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = martain.cpp; sourceTree = "<group>"; };
+		222E9DB71F70ED5D007DC9FA /* furniture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = furniture.h; sourceTree = "<group>"; };
+		222E9DB81F70ED73007DC9FA /* furniture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = furniture.cpp; sourceTree = "<group>"; };
 		222FF79A1F666CC8002720D0 /* rmb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rmb.h; sourceTree = "<group>"; };
 		222FF79B1F666CD7002720D0 /* rmb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rmb.cpp; sourceTree = "<group>"; };
 		222FF79D1F667ADD002720D0 /* increase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = increase.h; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				22CFD71E1F5964D200C9A348 /* main.cpp */,
+				222E9DB71F70ED5D007DC9FA /* furniture.h */,
+				222E9DB81F70ED73007DC9FA /* furniture.cpp */,
 				227C09B11F6F997000757796 /* animal.h */,
 				227C09B21F6F998500757796 /* animal.cpp */,
 				222FF7A01F668799002720D0 /* iotekString.h */,
@@ -178,6 +183,7 @@
 				222FF7A21F6687AE002720D0 /* iotekString.cpp in Sources */,
 				2267EA781F5E34C7008B9C50 /* car.cpp in Sources */,
 				22CFD71F1F5964D200C9A348 /* main.cpp in Sources */,
+				222E9DB91F70ED73007DC9FA /* furniture.cpp in Sources */,
 				223F9E161F5BA3A3001B288C /* func.c in Sources */,
 				227C09B31F6F998500757796 /* animal.cpp in Sources */,
 				2271FA611F612F2E00F7D3E5 /* student1.cpp in Sources */,

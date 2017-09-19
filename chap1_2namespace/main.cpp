@@ -224,6 +224,9 @@ using namespace::iotek;
 #include "animal.h"
 using namespace::iotek_an;
 
+//30、多重继承
+#include "furniture.h"
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -455,7 +458,7 @@ int main(int argc, const char * argv[]) {
     cout<<"s30="<<s30.data()<<endl;
     
     
-    cout <<"/////////////////////////\n//继承2\n/////////////////////////\n"<<endl;
+    cout <<"\n/////////////////////////\n//继承2\n/////////////////////////\n"<<endl;
     Cat cat(1,1);
     cat.setAge(2);
     cat.setColor(2);
@@ -463,6 +466,15 @@ int main(int argc, const char * argv[]) {
     Dog dog(2,2);
     dog.setAge(3);
     dog.setWeight(3);
+    
+    
+    cout <<"\n/////////////////////////\n//多重继承\n/////////////////////////\n"<<endl;
+    SofaBed sofaBed;
+    sofaBed.watchTV();
+    sofaBed.sleep();
+    sofaBed.foldout();
+    
+    
     
     return 0;
 }
