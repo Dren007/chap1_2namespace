@@ -220,6 +220,11 @@ void h(){
 #include "iotekString.h"
 using namespace::iotek;
 
+//29、继承-2
+#include "animal.h"
+using namespace::iotek_an;
+
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     using two::X;
@@ -448,6 +453,16 @@ int main(int argc, const char * argv[]) {
     
     cout<<"s10="<<s10.data()<<endl;
     cout<<"s30="<<s30.data()<<endl;
+    
+    
+    cout <<"/////////////////////////\n//继承2\n/////////////////////////\n"<<endl;
+    Cat cat(1,1);
+    cat.setAge(2);
+    cat.setColor(2);
+    
+    Dog dog(2,2);
+    dog.setAge(3);
+    dog.setWeight(3);
     
     return 0;
 }

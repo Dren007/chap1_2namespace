@@ -26,7 +26,7 @@ Person::Person(char *pN){
 }
 
 Person::~Person(){
-    cout<<"Desstructoring Person ~~ "<<endl;
+    cout<<"\n\nDesstructoring Person ~~ "<<endl;
     if (name!=NULL) {
         Print();
         delete []name;

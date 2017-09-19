@@ -15,6 +15,7 @@
 		223F9E161F5BA3A3001B288C /* func.c in Sources */ = {isa = PBXBuildFile; fileRef = 223F9E141F5BA3A3001B288C /* func.c */; };
 		2267EA781F5E34C7008B9C50 /* car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2267EA771F5E34C7008B9C50 /* car.cpp */; };
 		2271FA611F612F2E00F7D3E5 /* student1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2271FA601F612F2E00F7D3E5 /* student1.cpp */; };
+		227C09B31F6F998500757796 /* animal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 227C09B21F6F998500757796 /* animal.cpp */; };
 		22BE8F701F64B91D009E482B /* singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22BE8F6F1F64B91D009E482B /* singleton.cpp */; };
 		22CFD71F1F5964D200C9A348 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22CFD71E1F5964D200C9A348 /* main.cpp */; };
 		22E75DF81F5E6E7A001DACD2 /* student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22E75DF71F5E6E7A001DACD2 /* student.cpp */; };
@@ -49,6 +50,8 @@
 		2267EA771F5E34C7008B9C50 /* car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = car.cpp; sourceTree = "<group>"; };
 		2271FA5F1F612F1D00F7D3E5 /* student1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = student1.h; sourceTree = "<group>"; };
 		2271FA601F612F2E00F7D3E5 /* student1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = student1.cpp; sourceTree = "<group>"; };
+		227C09B11F6F997000757796 /* animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = animal.h; sourceTree = "<group>"; };
+		227C09B21F6F998500757796 /* animal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = animal.cpp; sourceTree = "<group>"; };
 		22BE8F6C1F64B8D6009E482B /* singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = singleton.h; sourceTree = "<group>"; };
 		22BE8F6F1F64B91D009E482B /* singleton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = singleton.cpp; sourceTree = "<group>"; };
 		22CFD71B1F5964D200C9A348 /* chap1_2namespace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chap1_2namespace; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				22CFD71E1F5964D200C9A348 /* main.cpp */,
+				227C09B11F6F997000757796 /* animal.h */,
+				227C09B21F6F998500757796 /* animal.cpp */,
 				222FF7A01F668799002720D0 /* iotekString.h */,
 				222FF7A11F6687AE002720D0 /* iotekString.cpp */,
 				222FF79D1F667ADD002720D0 /* increase.h */,
@@ -174,6 +179,7 @@
 				2267EA781F5E34C7008B9C50 /* car.cpp in Sources */,
 				22CFD71F1F5964D200C9A348 /* main.cpp in Sources */,
 				223F9E161F5BA3A3001B288C /* func.c in Sources */,
+				227C09B31F6F998500757796 /* animal.cpp in Sources */,
 				2271FA611F612F2E00F7D3E5 /* student1.cpp in Sources */,
 				22E75DF81F5E6E7A001DACD2 /* student.cpp in Sources */,
 				222552321F623CFC008C7CD7 /* person.cpp in Sources */,
